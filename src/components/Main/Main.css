@@ -1,0 +1,114 @@
+.main .greet span {
+   background: -webkit-linear-gradient(16deg, #2f82de, #9e92db);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+
+.action-buttons {
+   display: flex;
+   gap: 10px;
+   margin-top: 10px;
+}
+
+.icon {
+   font-size: 20px;
+   cursor: pointer;
+   transition: color 0.3s;
+}
+
+.liked,
+.disliked {
+   color: rgb(173, 175, 173);
+}
+
+
+.response-text {
+   max-height: 100px;
+   overflow: hidden;
+   transition: max-height 0.3s ease-in-out;
+}
+
+.main .card:hover {
+   /* background-color: #d2d0d0; */
+}
+
+.main-bottom {
+   position: absolute;
+   bottom: 0;
+   width: 100%;
+   max-width: 900px;
+   padding: 0px 20px;
+   margin: auto;
+}
+
+.search-box {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: 20px;
+   background-color: rgb(235, 235, 235);
+   padding: 10px 20px;
+   border-radius: 50px;
+}
+
+
+.search-box input {
+   flex: 1;
+   background: transparent;
+   border: none;
+   outline: none;
+   padding: 8px;
+   font-size: 18px;
+}
+
+.search-box div {
+   display: flex;
+   align-items: center;
+   gap: 15px;
+}
+
+.main .bottom-info {
+   font-size: 13px;
+   margin: 15px auto;
+   text-align: center;
+   font-weight: 300;
+}
+
+/* .result {
+   padding: 0px 5%;
+   max-height: 65vh;
+   overflow-y: scroll;
+} */
+
+.result::-webkit-scrollbar {
+   display: none;
+}
+
+
+
+.loader {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+}
+
+.loader hr {
+   border-radius: 4px;
+   border: none;
+   background-color: #f6f7f8;
+   background: linear-gradient(to right, rgb(192, 226, 237), #ffffff, rgb(192, 226, 237));
+   background-size: 800px 50px;
+   height: 20px;
+   animation: loader 1s infinite linear;
+}
+
+@keyframes loader {
+   0% {
+      background-position: -800px 0px;
+   }
+
+   100% {
+      background-position: 800px 0px;
+   }
+}
